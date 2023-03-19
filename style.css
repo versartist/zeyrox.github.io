@@ -54,6 +54,6 @@ a {
     font-weight: bolder;
     color:lightgray;
 }
-li:hover {
+a:hover {
 color: greenyellow;
 }
