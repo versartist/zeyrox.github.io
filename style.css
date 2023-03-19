@@ -40,10 +40,20 @@ p {
     background-color:rgb(43, 27, 27);
 }
 ul {
+   padding: 15px;
     background-color: black;
-}
+    text-align: right;
+} 
 li {
-    display: inline;
-    color:lightgoldenrodyellow ;
+    padding: 10px;
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
+    color:lightgray;
+}
+li:hover {
+color: greenyellow;
 }
