@@ -2,10 +2,15 @@
     margin: 0%;
     padding: 0%;
 }
-h1 {
+h1{
     text-align: center;
     background-image: url(./images/1zeytC.jpg) ;
     color: rgb(222, 220, 220);
+}
+h3{
+    text-align: left;
+    background-color: antiquewhite;
+    color: rgb(0, 0, 0);
 }
 
 .bg {
@@ -13,5 +18,10 @@ background-image: url(./images/bgimage.jpg);
 background-size: cover;
 background-position: center;
 height: 100vh;
+
+}
+p {
+    font-weight: bolder;
+    color: antiquewhite;
 
 }
