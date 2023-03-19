@@ -25,6 +25,9 @@ p {
     color: antiquewhite;
 
 }
-table {
+#tab {
     background-color: azure;
+}
+#tabb {
+    background-color: rgb(9, 147, 194);
 }
