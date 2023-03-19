@@ -39,7 +39,11 @@ p {
     padding: 5px;
     background-color:rgb(43, 27, 27);
 }
-nav {
+ul {
+    background-color: black;
+}
+li {
+    display: inline;
     color:lightgoldenrodyellow ;
     font-weight: bolder;
 }
