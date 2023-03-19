@@ -58,3 +58,6 @@ a {
 a:hover {
 color: greenyellow;
 }
+#info {
+    padding-top: 30px;
+}
