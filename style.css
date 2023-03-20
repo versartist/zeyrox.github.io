@@ -18,11 +18,12 @@ h3{
 }
 
 .bg {
-background-image: url(./images/bgimage.jpg);
+/* background-image: url(./images/bgimage.jpg);
 background-size: cover;
-background-position: center;
+background-position: center; */
+width: 100vw;
 height: 100vh;
-
+background: linear-gradient(to top left, blue,black);
 }
 p {
     font-weight: bolder;
