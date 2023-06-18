@@ -1,64 +1,72 @@
-* {
-    margin: 0%;
-    padding: 0%;
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&family=Jost&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    height: 200vh;
+}
+.main {
+    background-image: url(bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center
+    ;
+}
+.lg {
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+    transform: translate(50px,25px);
+    letter-spacing: 1px;
+}
+span {
+    color: rgb(48, 219, 74);
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: aliceblue;   
 }
 h1{
-    text-align: center;
-    background-image: url(./images/1zeytC.jpg) ;
-    color: rgb(222, 220, 220);
-}
-h2 {
-    color: rgb(251, 249, 171);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px 0px;
+    font-size: 5em;
+    transform: translate(0px 10px);
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
 h3{
-    text-align: left;
-    background-color: antiquewhite;
-    color: rgb(0, 0, 0);
+    font-family: 'Jost', sans-serif;
+    font-size: 2rem;
+    margin-bottom: -10px;
 }
-
-.bg {
-/* background-image: url(./images/bgimage.jpg);
-background-size: cover;
-background-position: center; */
-width: 100vw;
-height: 100vh;
-background: linear-gradient(to top left, blue,black);
-}
-p {
-    font-weight: bolder;
-    color: antiquewhite;
-
-}
-.tab {
-    background-color: azure;
-    margin: 10px;
-    padding: 5px;
-}
-.tabb {
-    margin: 10px;
-    padding: 5px;
-    background-color:rgb(0, 0, 0);
-}
-nav ul  {
-   padding: 15px;
-    background-color: black;
-    text-align: right;
-    position: sticky;
-} 
-li {
-    padding: 10px;
-    display: inline-block;
-}
-a {
-    text-decoration: none;
+p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 30px;
+}
+.para {
+    width: 50%;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+a{
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    border: 5px solid rgb(13, 172, 37);
+    background-color: rgb(12, 173, 36);
+    border-radius: 5px;
     font-weight: bolder;
-    color:lightgray;
+    transition: .5s;
+    transform: scale(1.2rem);
 }
-a:hover {
-color: greenyellow;
-}
-#info {
-    padding-top: 30px;
+a:hover{
+    
+    color: white;
 }
