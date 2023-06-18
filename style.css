@@ -68,9 +68,8 @@ a{
     border: 5px solid rgb(13, 172, 37);
     background-color: rgb(12, 173, 36);
     border-radius: 5px;
+    letter-spacing: 1px;
     font-weight: bolder;
-    transition: .5s;
-    transform: scale(1.2rem);
 }
 a:hover{
     
@@ -99,7 +98,13 @@ a:hover{
         font-family: 'Alegreya Sans SC', sans-serif;
     }
     .para {
+        font-family: 'Jost', sans-serif;
         width: 100%;
         overflow: hidden;
         margin-bottom: 50px;}
+    h3{
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: -10px;
+}
 }
