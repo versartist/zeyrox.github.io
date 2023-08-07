@@ -1,33 +1,42 @@
-let string = "";
-let buttons= document.querySelectorAll('.btn');
-Array.from(buttons).forEach((btn)=>{
-  btn.addEventListener('click',(ev)=>{
-    if(ev.target.innerHTML == '=')
-    {
-      string=eval(string);
-      document.querySelector('#input').value = string;
+const input= document.getElementById("input");
+const list = document.getElementById('list');
+show();
+function addTask(){
+    if (input.value ===''){
+        alert("You must write something")}
+    
+    else if (list.children.length >=7){
+        alert("sorry for the time being you can only add upto 7 tasks")
+        input.value=''; 
+}
+else {
+    let li= document.createElement('li');
+    li.innerHTML=input.value;
+    list.appendChild(li);
+    input.value='';
+    let span = document.createElement('span');
+    span.innerHTML=('\u00d7')
+    li.appendChild(span);
+    saveData()
+}};
+document.addEventListener("keydown",(event)=>{ 
+    if (event.key === "Enter") {addTask();}
+ });
+ list.addEventListener("click",(e)=>{
+    if(e.target.tagName==="LI"){
+        e.target.classList.toggle("checked")
+        saveData()
     }
-      else if(ev.target.innerHTML == 'C')
-    {
-      string="";
-      document.querySelector('#input').value = string;
+    else if (e.target.tagName==="SPAN"){
+        e.target.parentElement.remove()
+        saveData()
     }
-        else if(ev.target.innerHTML == 'backspace')
-    {
-      string= string.slice(0,-1);
-      document.querySelector('#input').value = string;
-    }
-    else if(ev.target.innerHTML == 'x')
-    {
-      string= string +'*';
-      document.querySelector('#input').value = string;
-    }
-      else 
-    {
-    console.log(ev.target);
-    string= string + ev.target.innerHTML;
-    console.log(string)
-    document.querySelector('#input').value = string}
-  })
-  
-}) 
+ },false);
+
+ function saveData(){
+    localStorage.setItem("data",list.innerHTML)
+ };
+ function show(){
+    list.innerHTML=localStorage.getItem('data')
+ };
+ 

@@ -1,96 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@300&display=swap');
 *{
-  padding:0%;
-  margin:0%;
-  box-sizing:border-box;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
 }
-
-body {
-      display: flex;
-      align-items: center;
-      height: 100vh;
-      margin: 0;}
-.text-center{
-  margin-top:45px;
-  font-family: 'Titillium Web', sans-serif;
-  color:white;
-  font-size:3em;
-  text-align: center;
+.bg {
+ background-image: url(./images/blob-bg.svg);
+ height: 100vh;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
 }
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48;
+.container {
+    max-width: 500px;
+    background-color: rgb(39, 57, 105);
+    /* border: 5px solid red; */
+    max-height:  540px;
+    position: relative;
+    top: 20%;
+    margin: 0 auto;
+    padding: 20px 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px;
 }
-.flex{
-  display:flex;
-  justify-content:space-around;
+h3 {
+    user-select: none;
+    font-family: 'Open sans';
+    font-size: 1.5rem;
+    text-align: center;
+    color: aliceblue;
 }
-.container{
-  min-height:500px;
-  position: absolute;
-  display: inline-block;
-  background:#000000;
-  margin:2px;
-  align-items:center;
-   top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-  border-radius:35px;
-  box-shadow: inset 0px 0px 10px white;
+span {
+    color:rgb(255, 9, 9);
 }
-.direction {
-  flex-direction:column;
-}
-
-.btn {
-   width:60px;
-  height:60px;
-  padding:10px;
-  font-weight:bolder;
-  font-size:1.5em;
-  border-radius:50%;
-  color:white;
-  background:#292929c9;
-  border:0;
-  outline:0;
-  margin:5px 6px;
-  cursor:pointer;
-  }
-.equal {
-  border-radius: 50px;
-  width: 135px;
-  background:#ff7300;
-}
-.spl {
-  background:#323232;
-}
-.calc{
-  background:black;
-  width:100%
-; height:100vh;
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(217, 221, 249);
+    border-radius: 30px;
+    padding-left: 15px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 15px;
 }
 #input {
-  position:relative;
-  margin:40px 10px 15px;
-  width:301px;
-  height:50px;
-  border-radius:15px;
-  font-size:1.5em;
-  font-weight:bolder;
-  padding-left:5px;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-family:'poppins' ;
+    font-weight: bold;
+
 }
-.keys {
-  width: 301px;
+#add {
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    background: rgb(255, 9, 9);
+    padding: 13px 35px;
+    border-radius: 30px;
+    font-size: larger;
+    font-family:'poppins' ;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 400ms;
 }
-.btnss {
-  margin:35px 10px 10px;
-  }
-#input::after {
-  border:none;
+#add:hover {
+    transform: scale(1.05);
+   background:rgb(15, 15, 15) ;
 }
-.move {
-  position:absolute;
+ul{
+    padding-top: 30px;
+}
+ul li {
+    list-style: none;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 8px 12px 50px;
+    font-family: 'poppins';
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    word-wrap: break-word;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    left: 5px;
+}
+.checked {
+    color: #dbdbdbf0;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    background-image: url(./images/checked.png);
+}
+ul li span {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    color: #e4e1e1;
+    line-height: 31px;
+    text-align: center;
+    top: 5px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+ul li span:hover {
+    color: black;
+    background: #e7e5e5f0;
 }
