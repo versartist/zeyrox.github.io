@@ -36,9 +36,12 @@ nav {
     padding: .5rem .8rem;
 }
 span{
-    color: rgb(243, 107, 44);
+    color: rgb(243, 107, 44);}
+p {
+    margin: 1.3rem;
+    font-weight: 100;
+    font-family: Rubik;
 }
-
 @media (max-width:400px){
     .blob {
         margin: 2rem auto;
