@@ -6,7 +6,7 @@
  .blob {
     width: 400px;
     height: 400px;
-    background-image: url(./images/portrait.png);
+    background-image: url(./images/portrait);
     background-position: center;
     background-size: cover;
 animation: blob 15s forwards infinite ;
