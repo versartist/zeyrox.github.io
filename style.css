@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Jost&family=Rubik:wght@700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Jost&family=Rubik:wght@500&display=swap'); 
 *{
     margin: 0%;
     padding: 0%;
@@ -38,9 +38,10 @@ nav {
 span{
     color: rgb(243, 107, 44);}
 p {
-    margin: 1.3rem;
+    margin: 1rem;
     font-weight: 100;
     font-family: Rubik;
+    font-size:1.2rem;
 }
 @media (max-width:400px){
     .blob {
