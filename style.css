@@ -1,8 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Jost&family=Rubik:wght@500&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Jost&family=Rubik:wght@400&display=swap'); 
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+li  a {
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+
 }
 .flex {
     display: flex;
@@ -21,13 +30,13 @@ h1{
     font-family:'Rubik';
     font-size: 2.2rem;
 }
-ul li {
+ul li  {
+    text-decoration: none;
     display: inline-block;
     font-size: 1.1rem;
     padding: 0 .5rem;
-    transition: .2s;
 } 
-ul li:hover{
+ul li a:hover{
     color: rgb(243, 107, 44) ;
 } 
 nav {
@@ -36,17 +45,74 @@ nav {
     padding: .5rem .8rem;
 }
 span{
-    color: rgb(243, 107, 44);}
+    color: rgb(243, 107, 44);
+}
 p {
     margin: 1rem;
     font-weight: 100;
     font-family: Rubik;
-    font-size:1.2rem;
+    line-height: 25px;
+    font-size: 1.1rem;
 }
+
 @media (max-width:400px){
     .blob {
         margin: 2rem auto;
          }
       
-
+    /* .main {width: 100vw;
+        height:100vh;
+    } */
+    .card {
+        margin: 3rem auto 2rem;
+    }
 }  
+#project{
+    width:100;
+    min-height: 100vh;
+    max-height: 100%;
+    padding-top: 2em;
+    background-color: rgb(243, 107, 44);
+}
+.titles {
+    font-family: 'Nunito';
+    text-align: center;
+    color: white;
+}
+.imgs {
+    width:  8em;
+    height: 8em;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 1.5rem auto;
+    box-shadow: 0 0 1em ;
+}
+.container {
+    margin-top: 3rem;
+    display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+.card {
+    margin: .5rem;
+    width: 12rem;
+    height: 15rem;
+    border-radius: 5em;
+    background-color: rgb(216, 212, 212);
+}
+.container h3 {
+    font-family: Jost;
+    text-align: center;
+    position: relative;
+    top: -.5rem;
+}
+.card a {
+    text-decoration: none;
+    color: black;
+}
+#about {
+    height: 100vh;
+    text-align: center;
+    padding: 100% 15%;
+}
