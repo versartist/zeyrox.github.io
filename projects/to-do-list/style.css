@@ -122,13 +122,13 @@ ul li span:hover {
     color: black;
     background: #e7e5e5f0;
 }
-@media (max-width:400px) {
+@media screen and (max-width:400px) {
     .container{
         max-width:300px;
         margin: 0 auto;
 }
 #add {
-    margin-left:-80%;
+    margin-left:-100%;
 }
 .box {
     max-width: 250px;
