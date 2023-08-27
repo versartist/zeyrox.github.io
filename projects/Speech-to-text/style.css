@@ -41,7 +41,7 @@ h3 {
     margin-bottom: 5px;
     font-size: 15px;
 }
-.listen {
+.listen  {
     width: 100%;
     margin-top: 30px;
     padding: 10px;
@@ -50,4 +50,29 @@ h3 {
     color: var(--bg-color);
     font-size: 20px;
     border: none;
+}
+.listening {
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    font-size: 20px;
+    border: none;
+    color: var(--bg-color);
+    background-image: url(/projects/Speech-to-text/bars.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position-x:  90px; 
+    background-position-y:  6px; 
+    height: 43.8px;
+
+}
+.listening::after{
+    content: "Listening";
+    position: relative;
+    left: 20px;
+}
+.listening p {
+    display: none;
 }
