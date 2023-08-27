@@ -66,6 +66,11 @@ p {
     .card {
         margin: 3rem auto 2rem;
     }
+    .long-h3{
+        width: 140px;
+        word-wrap: break-word;
+        line-height: 1em;
+    }
 }  
 #project{
     width:100;
@@ -93,10 +98,14 @@ p {
     display: flex;
    flex-direction: row;
    justify-content: space-evenly;
+   flex-wrap: wrap;
+   /* display: grid;
+   grid: ; */
 }
+
 .card {
     margin: .5rem;
-    width: 12rem;
+    width: 10rem;
     height: 15rem;
     border-radius: 5em;
     background-color: rgb(216, 212, 212);
@@ -106,6 +115,7 @@ p {
     text-align: center;
     position: relative;
     top: -.5rem;
+    margin: 0 auto;
 }
 .card a {
     text-decoration: none;
