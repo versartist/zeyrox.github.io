@@ -41,22 +41,35 @@ h3 {
     margin-bottom: 5px;
     font-size: 15px;
 }
+.btn {
+margin-bottom: 20px;
+}
 .listen  {
     width: 100%;
     margin-top: 30px;
     padding: 10px;
     border-radius: 5px;
-    background-color: var(--primary-color);
+    background-color: var(--text-color);
     color: var(--bg-color);
     font-size: 20px;
     border: none;
+}
+.listen::before{
+    content: "";
+    background-image: url(./mic.png);
+    background-size: cover;
+    width: 25px;
+    position: absolute;
+    height: 25px;
+    transform: translateX(-100px);
+    background-blend-mode: overlay;
 }
 .listening {
     width: 100%;
     margin-top: 30px;
     padding: 10px;
     border-radius: 5px;
-    background-color: var(--primary-color);
+    background-color: var(--text-color);
     font-size: 20px;
     border: none;
     color: var(--bg-color);
@@ -75,4 +88,31 @@ h3 {
 }
 .listening p {
     display: none;
+}
+.result {
+    width: 100%;
+    border: 1px solid var(--light-text-color) ;
+    min-height: 200px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    color: var(--text-color);
+    word-wrap: break-word;
+}
+.result p {
+    color: var(--light-text-color);
+    display: inline;
+}
+.btns {
+    width: 100%;
+    background-color: var(--text-color);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
 }
