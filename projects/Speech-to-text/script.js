@@ -21,7 +21,7 @@ function speechToText(){
     try{
      recognition = new speechRecognition();
      recognition.lang = inputLang.value;
-     recognition.interimREsults = true;
+     recognition.interimResults = true;
 
      recognition.start();
      recognition.onresult = (event)=>{
@@ -68,3 +68,6 @@ function stopRecording(){
   recordBtn.classList.remove("listening");
   recording = false;
 }
+clearBtn.addEventListener("click",()=>{
+    result.innerHTML="";
+})
