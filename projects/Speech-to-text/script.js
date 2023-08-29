@@ -56,7 +56,7 @@ recordBtn.addEventListener("click", ()=> {
         speechToText();
         recording=true;
         recordBtn.classList.add("listening");
-        recordBtn.classList.reomve("listen");
+        recordBtn.classList.remove("listen");
     } else {
         stopRecording();
     } 
