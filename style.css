@@ -24,6 +24,7 @@ h2{
     margin: 0 .7em;
     font-family:'Jost' ;
 }
+
 h1{ 
     font-weight: 900;
     margin: 0 .48em;
@@ -70,6 +71,17 @@ p {
         width: 140px;
         word-wrap: break-word;
         line-height: 1em;
+    }
+    section {
+        min-height: 100vh;
+    }
+    .about-pic {
+        width:300px;
+        height: 250px;
+        background-image: url(/images/about\ pic.jpg);
+        background-size: cover;
+        background-position: -10px;
+        background-repeat: no-repeat;
     }
 }  
 #project{
@@ -122,10 +134,18 @@ p {
     color: black;
 }
 #about {
-    height: 100vh;
+ min-height: 98vh;
+ max-height: 100%;
+} 
+.small-text {
+    font-size: 15px;
+    color: rgb(171, 168, 163);
     text-align: center;
-    padding: 100% 15%;
+    margin-bottom: 0px;
+    
 }
-section {
-    height: 100vh;
+.head {
+    text-align: center;
+    font-size: 20px;
+    margin-top: -5px;
 }
