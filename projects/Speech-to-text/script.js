@@ -64,8 +64,18 @@ function speechToText(){
     catch(err)
     {console.log(err);}
 }
+async function askForMicrophonePermission() {
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        // Permission granted, you can start speech recognition here speechToText();
+    } catch (error) {
+        // Handle permission denied or other errors
+        console.error('Microphone permission error:', error);
+    }
+}
 recordBtn.addEventListener("click", ()=> {
     if (!recording) {
+        askForMicrophonePermission();
         speechToText();
         recording=true;
         recordBtn.classList.add("listening");
