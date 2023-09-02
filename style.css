@@ -80,7 +80,7 @@ p {
         height: 250px;
         background-image: url(/images/about\ pic.jpg);
         background-size: cover;
-        background-position: -10px;
+      
         background-repeat: no-repeat;
     }
 }  
