@@ -44,7 +44,7 @@ function speechToText(){
       };
        
       recognition.onerror = (event) => {
-          stopRecording
+          stopRecording()
            if (event.error === "no-speech") {
         alert("No speech was detected. Stopping...");
       } else if (event.error === "audio-capture") {
