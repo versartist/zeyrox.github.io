@@ -78,10 +78,10 @@ p {
     .about-pic {
         width:300px;
         height: 250px;
-        background-image: url(/images/about\ pic.jpg);
+        background-image: url(/images/about\ pic-min.jpg);
         background-size: cover;
       
-        background-repeat: no-repeat;
+
     }
 }  
 #project{
