@@ -44,7 +44,20 @@ function speechToText(){
       };
        
       recognition.onerror = (event) => {
-     alert("Error Occured :"+event.error);
+          stopRecording
+           if (event.error === "no-speech") {
+        alert("No speech was detected. Stopping...");
+      } else if (event.error === "audio-capture") {
+        alert(
+          "No microphone was found. Ensure that a microphone is installed."
+        );
+      } else if (event.error === "not-allowed") {
+        alert("Permission to use microphone is blocked.");
+      } else if (event.error === "aborted") {
+        alert("Listening Stopped.");
+      } else {
+        alert("Error occurred in recognition: " + event.error);
+      }
       };
 
     }
