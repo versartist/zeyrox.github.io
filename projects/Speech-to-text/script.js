@@ -37,7 +37,7 @@ function speechToText(){
             }
            document.querySelector(".interim").innerHTML = " "+ speechResult;
         }
-        downloadBtn.disabled = false;
+        downloadBtn.disabled = true;
       };
       recognition.onspeechend = ()=> {
         speechToText();
