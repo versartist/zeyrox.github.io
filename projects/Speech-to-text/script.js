@@ -94,5 +94,5 @@ function stopRecording(){
 clearBtn.addEventListener("click",()=>{
     result.innerHTML="";
 })
-// window.addEventListener('load', () => {
-//     askForMicrophonePermission();
+window.addEventListener('load', () => {
+    askForMicrophonePermission();
