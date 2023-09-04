@@ -56,7 +56,7 @@ p {
     font-size: 1.1rem;
 }
 
-@media (max-width:400px){
+@media (max-width:450px){
     .blob {
         margin: 2rem auto;
          }
