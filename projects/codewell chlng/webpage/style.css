@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Numans&family=Prata&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    letter-spacing: .5px;
+}
+body{
+    font-family: 'Numans', sans-serif;
+    background-color: black;
+}
+h3 {
+    font-weight: 350;
+    font-family: 'Prata', serif;
+    text-align: center;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 60px 0 ;
+    width: 60%;
+    letter-spacing: .5px;
+   
+}
+.text-head{
+    width: 80%;
+    color: rgba(197, 197, 197, 0.623);
+}
+.header-para{
+    font-family: 'Prata', serif;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.content {
+    height: auto;
+    padding: 0 150px;
+    /* margin: 0 150px; */
+    background-color: black;
+}
+
+.part {
+    display: flex;
+    align-items: center;
+}
+.txt-work{
+    width: 530px;
+    color: rgba(197, 197, 197, 0.623);
+}
+.btn {
+    padding: 10px 5px;
+    font-family: 'Prata', serif;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    width: 170px;
+    height: 50px;
+    background-color: rgb(234, 200, 28);
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px;
+}
+
+li {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+     margin: 0 15px;
+     font-size: large;
+     color: rgba(197, 197, 197, 0.623);
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.works{
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.icon {
+    display: contents;
+}
+.work-name
+{
+    font-family: 'Prata', serif;
+    margin: 10px 0 ;
+}
+.work {
+    width: 530px;
+}
+.section-2{
+    padding:25px 150px;
+    background-color: rgb(50, 54, 63);
+}
+.section-2 h1{
+    font-family: 'Prata', serif;
+    font-size: 40px;
+}
+.para {
+    width: 530px;
+}
+.paras {
+    margin: 10px 0 ;
+    letter-spacing: .5px;
+    display: flex;
+    justify-content: space-between;
+}
+.offer {
+    margin: 60px 0 ;
+    width: 530px;
+
+}
+p {
+    color: rgba(197, 197, 197, 0.623);
+    font-size: 18px;
+}
+.offer h1 {
+    font-family: 'Prata', serif;
+    letter-spacing: .5px;
+    font-size: 38px;
+}
+.offer p {
+    width: 510px;
+}
+footer {
+    font-family: 'Prata', serif;
+    padding: 25px 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.icons {
+    margin:0 5px;
+}
+@media(max-width: 400px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .content {
+        padding: 10px 15px;
+    }
+    .nav {
+        margin: 10px 0px;
+    }
+    li {
+        margin: 3px 0px 0px;
+    }
+    h3{
+        font-size: medium;
+    }
+    .nav-card{
+        display: none;
+        position: absolute;
+        right: 14px;
+        top:23px;
+        width: 40%;
+        height: auto;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.915);
+    }
+    .nav-card li {
+        display: block;
+        margin: 30px;
+    }
+    li .btn {
+        border-radius: 5px;
+        margin: 0px 0px 10px;
+        width: 100px;
+        height: 35px;
+        font-size: 13px
+    }
+    .nav-card li :nth-child(5){
+        margin: 0px;
+    }
+    .x-icon{
+        position: absolute;
+        right: 4px;
+        top: 6px;
+        transform: scale(1.2);
+    } 
+    .header-para{
+        font-family: 'Prata', serif;
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    .header {
+        width: 100%;
+    }
+    .text-head {
+        width: 100%;
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+   .logos {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+   }
+}
