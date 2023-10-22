@@ -1,9 +1,7 @@
 function showSide() {
-    document.querySelector('.nav-card').style.display='block'
-    document.querySelector('.hamb').style.display='none'
+    document.querySelector('.nav-card').style.display='block';
 
 }
 function hideSide() {
-    document.querySelector('.hamb').style.display='block'
-    document.querySelector('.nav-card').style.display='none'
+    document.querySelector('.nav-card').style.display='none';
 }
