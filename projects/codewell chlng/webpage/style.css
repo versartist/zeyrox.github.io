@@ -39,6 +39,9 @@ h3 {
     /* margin: 0 150px; */
     background-color: black;
 }
+.hide-on-lg{
+    display: none;
+}
 
 .part {
     display: flex;
@@ -129,16 +132,20 @@ p {
 .offer p {
     width: 510px;
 }
-footer {
+.footer {
     font-family: 'Prata', serif;
     padding: 25px 150px;
     display: flex;
+    background-color: rgb(50, 54, 63);
     justify-content: space-between;
 }
 .icons {
     margin:0 5px;
 }
 @media(max-width: 400px){
+    .hide-on-lg {
+        display: block;
+    }
     .hide-on-mobile{
         display: none;
     }
@@ -157,12 +164,13 @@ footer {
     .nav-card{
         display: none;
         position: absolute;
-        right: 14px;
-        top:23px;
+        right: 8px;
+        top:12px;
         width: 40%;
         height: auto;
         z-index: 2;
-        background-color: rgba(0, 0, 0, 0.915);
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.946);
     }
     .nav-card li {
         display: block;
@@ -180,8 +188,8 @@ footer {
     }
     .x-icon{
         position: absolute;
-        right: 4px;
-        top: 6px;
+        right: 10px;
+        top: 20px;
         transform: scale(1.2);
     } 
     .header-para{
@@ -204,5 +212,57 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+   }
+   .logos img {
+    margin: 15px;
+   }
+   .works {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+   .work {
+    width: 100%;
+    padding: 10px 0px;
+   }
+   .work img {
+    width: 100%;
+   }
+   .txt-work {
+    width: 100%;
+    font-size: 16px;
+   }
+   .section-2 {
+    padding: 10px;
+   }
+   .paras {
+    flex-wrap: wrap;
+   }
+   .para {
+    width: 100%;
+    margin: 25px 0px;
+    font-size: 16px;
+   }
+   .section-2 h1 {
+    font-size: 32px;
+    font-weight: 300;
+   }
+   .offer {
+    width: 100%;
+   }
+   .offer h1{
+     font-size: 32px;
+     font-weight: 300;
+   }
+   .offer p {
+    width: 100%;
+   }
+   .footer {
+    background-color: rgb(50, 54, 63);
+    padding: 15px 25px;
+    align-items: center;
+
+   }
+   p {
+    font-size: 16px;
    }
 }
