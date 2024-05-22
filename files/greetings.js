@@ -23,6 +23,7 @@ const greetings = [
 ];
 
 function displayAndAnimate() {
+        content.style.display = "none";
   const tl = gsap.timeline({ ease: 'power3.out' }); // Use power3.out for easing (optional)
 
   greetings.forEach((greeting, index, greetingsArray) => {
