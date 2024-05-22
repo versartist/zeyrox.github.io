@@ -4,6 +4,9 @@
     padding: 0%;
     box-sizing: border-box;
 }
+:root {
+    --primaryclr :  rgb(243, 107, 44) ;
+}
 .content {
     display: none;
 }
@@ -20,7 +23,7 @@
 }
 .strips {
     flex: 1;
-    background: #ff0404;
+    background: var(--primaryclr)
 }
 .greetings {
     position: absolute;
@@ -63,7 +66,7 @@ ul li  {
     padding: 0 .5rem;
 } 
 ul li a:hover{
-    color: rgb(243, 107, 44) ;
+    color:var(--primaryclr) ;
 } 
 nav {
     align-items: center;
@@ -71,7 +74,7 @@ nav {
     padding: .5rem .8rem;
 }
 span{
-    color: rgb(243, 107, 44);
+    color:var(--primaryclr);
 }
 p {
     margin: 1rem;
@@ -81,37 +84,7 @@ p {
     font-size: 1.1rem;
 }
 
-@media (max-width:450px){
-    .blob {
-        margin: 2rem auto;
-         }
-      
-    .main {width: 100vw;
-        height:100vh;
-    }
-    .card {
-        margin: 3rem auto 2rem;
-    }
-    .long-h3{
-        width: 140px;
-        word-wrap: break-word;
-        line-height: 1em;
-    }
-    section {
-        min-height: 100vh;
-    }
-    .about-pic {
-        width: 260px;
-        height: 250px;
-        background-image: url(/images/about\ pic-min.jpg);
-        border-radius: 50%;
-        margin-top: 20px;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: 50% 23%;
-      box-shadow: 0px 1px 5px black;
-    }
-}  
+
 #project{
     width:100;
     min-height: 100vh;
@@ -232,7 +205,7 @@ p {
     display: block;
     width: 90%;
     height: 100%;
-    background-color: rgb(253, 125, 19);
+    background-color:var(--primaryclr);
     border-radius: 6px;
     animation: progress .5s forwards;
 }
@@ -240,11 +213,11 @@ p {
     width:85%;
 }
 .js {
-    width: 40%;
+    width: 80%;
 }
 .indicator{
     position: absolute;
-    background:  rgb(253, 125, 19);
+    background: var(--primaryclr);
     right: -15px;
     top: -25px;
     font-size:12px;
@@ -261,8 +234,8 @@ p {
     opacity: 0;
   }
   100% {
-    width:100%
-;    opacity:1;
+    width:100%;
+    opacity:1;
   }
 
 }
@@ -277,3 +250,38 @@ p {
     background-color:  rgb(253, 125, 19);
     transform:rotate(45deg) translateX(-50%);
 }
+
+
+/* small screen */
+
+@media (max-width:450px){
+    .blob {
+        margin: 2rem auto;
+         }
+      
+    .main {width: 100vw;
+        height:100vh;
+    }
+    .card {
+        margin: 3rem auto 2rem;
+    }
+    .long-h3{
+        width: 140px;
+        word-wrap: break-word;
+        line-height: 1em;
+    }
+    section {
+        min-height: 100vh;
+    }
+    .about-pic {
+        width: 260px;
+        height: 250px;
+        background-image: url(/images/about\ pic-min.jpg);
+        border-radius: 50%;
+        margin-top: 20px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 23%;
+      box-shadow: 0px 1px 5px black;
+    }
+}  
