@@ -19,7 +19,7 @@ const greetings = [
   "Hallo" /* Dutch */,
   "Hej" /* Swedish */,
   "Hei" /* Norwegian */,
-  "Hola"
+  "Hola Welcome !!"
 ];
 
 function displayAndAnimate() {
