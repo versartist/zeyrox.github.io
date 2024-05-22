@@ -4,6 +4,29 @@
     padding: 0%;
     box-sizing: border-box;
 }
+
+.preloader {
+    font-size: larger;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    /* background: #f54f26c2; */
+    height: 100vh;
+    display: flex;
+    /* gap: 5px; */
+    width: 100vw;
+    text-align: center;
+}
+.strips {
+    flex: 1;
+    background: #ff0404;
+}
+.greetings {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 html{
     scroll-behavior: smooth;
 }

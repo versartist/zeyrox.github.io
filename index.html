@@ -8,7 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./files/blob.css">
 </head>
-<body>
+<body onload="displayAndAnimate()">
+    <div class="preloader">
+        <div class="strips"></div>
+        <div class="strips"></div>
+        <div class="strips"></div>
+        <div class="strips"></div>
+        <div class="strips"></div>
+        <div class="strips"></div>
+        <div class="strips"></div>
+        <div class="strips"></div>
+        <div class="strips"></div>
+        <div class="strips"></div>
+        <div class="strips"></div>
+        <div class="strips"></div>
+        <div class="strips"></div>
+        <h2 class="greetings"></h2>
+    </div>
     <section class="main">
     <nav class="nav flex">
         <h3>Port<span>folio</span></h3>
@@ -89,6 +105,8 @@
 </section>
 <!-- Include ScrollReveal from a CDN -->
 <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="./files/greetings.js"></script>
 
 <script src="https://kit.fontawesome.com/c7d0ae3411.js" crossorigin="anonymous"></script>
 </body>
