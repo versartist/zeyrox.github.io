@@ -22,7 +22,23 @@ const greetings = [
   "Hola Welcome !!"
 ];
 
+const strips = document.querySelectorAll('.strips');
+
+function adjustItemNumber() {
+  const isLaptop = window.innerWidth >= 768; // Adjust breakpoint as needed (laptop size)
+  const numItemsToShow = isLaptop ? 12 : 6;
+  strips.forEach((item, index) => {
+    item.style.display = index < numItemsToShow ? 'block' : 'none';
+  });
+}
+
+
+// Run initial adjustment on page load
+
+
+
 function displayAndAnimate() {
+  adjustItemNumber();
         content.style.display = "none";
   const tl = gsap.timeline({ ease: 'power3.out' }); // Use power3.out for easing (optional)
 
