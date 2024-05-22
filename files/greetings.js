@@ -1,5 +1,6 @@
 const greetingTag = document.querySelector('.greetings');
 const preloader = document.querySelector('.preloader');
+const content =     document.querySelector('.content');
 // const content = document.getElementById('content'); // Assuming your main content has this ID
 
 const greetings = [
@@ -33,7 +34,7 @@ function displayAndAnimate() {
         stagger: 0.04 }) // Shorter duration, step-end ease, slight delay
         
       .set(preloader, { display: 'none' }) // Hide preloader after animation
-        // .set(content, { display: 'block' }); // Show main content after preloader hides
+        .set(content, { display: 'block' }); // Show main content after preloader hides
     } else {
       tl.to(greetingTag, { duration: .15, textContent: greeting }); // Update greeting text
     }
